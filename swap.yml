@@ -1,0 +1,9 @@
+---
+name: user creation
+hosts: localhost
+tasks:
+  - name: fetching swap memory
+    command: free -m
+    register: swap
+  - debug:
+      var: swap
