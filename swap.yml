@@ -1,10 +1,9 @@
 ---
 - name: user creation
   hosts: localhost
-  become: true
   tasks:
    - name: fetching swap memory
-     command: free 
+     command: free -m
      register: swap
    - debug:
        var: swap
