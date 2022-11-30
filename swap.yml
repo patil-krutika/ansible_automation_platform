@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
    - name: fetching swap memory
-     command: free -m
+    # command: free -m
      register: swap
    - debug:
        var: swap
