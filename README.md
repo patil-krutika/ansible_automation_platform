@@ -2,7 +2,7 @@
 - name: installing webserver
   hosts: localhost
   tasks:
-    - nmae: Install latest version
-      yum:
+    - name: Install latest version
+      dnf:
         name: httpd
         state: latest
