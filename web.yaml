@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
     - name: install packages
-      yum:
+      dnf:
         name: httpd
         state: latest
     - name: start service
